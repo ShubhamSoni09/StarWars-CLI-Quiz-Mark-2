@@ -13,14 +13,14 @@ console.log(chalk.magentaBright.bold("Hey there, This is Shubham.\nHope you are 
 
 let user_name=readlineSync.question(chalk.blueBright.bold.underline("What should I call you?-"))
 if(user_name.length<1){
-  user_name='Human with no name'
+  user_name='Human who has no name'
 }
 console.log(chalk.yellowBright.bold("\n Hey " +user_name.toUpperCase()+",\n\n This is a StarWars based CLI Quiz\n"))
 
 console.log(chalk.greenBright("Here are the rules:\n1. Every correct answer adds one point to the score \n2. There is no penalty for wrong answers.\n3. There are 2 levels with 5 questions in each level. Answer atleast 4 correct on levelZero to reach Level1\n\nNOTE--This quiz is a two level play where if the user clears L1 then his name is replaced with current winner"))
 // ===========levels using arrays and objects================
 let levelZero=[
-  {q:"\n1. Stawars franchise was created by?--",a:"george lucas"},
+  {q:"\n1. Stawars franchise was created by?--",a:"George Lucas"},
   {q:"2. In which year did the first Starwars film release?--",a:"1977"},
   {q:"3. In which Starwars flim did Emilia Clarke star--",a:"Solo"},
   {q:"4. Who was the first Skywalker?--",a:"Shmi skywalker"},
